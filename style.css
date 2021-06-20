@@ -108,6 +108,10 @@ a {
 		overflow: auto;
 	}
 
+	.about::-webkit-scrollbar {
+		display: none;
+	}
+
 	.index {
 		justify-content: flex-start;
 	}
