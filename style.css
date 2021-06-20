@@ -111,5 +111,6 @@ a {
 
 	.self {
 		background-attachment: scroll;
+		background-size: 100% auto;
 	}
 }
