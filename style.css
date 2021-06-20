@@ -3,8 +3,39 @@ body {
 	color: white;
 	padding: 0;
 	margin: 0;
+	font-family: times, serif;
 }
 
-p {
-	font: 16px times, serif;
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.grid {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "left right";
+	overflow: hidden;
+}
+
+.left {
+	grid-area: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.links a {
+	font-size: 4vw;
+}
+
+.links a:hover {
+	font-style: italic;
+}
+
+.right {
+	background: url("teeth.png") no-repeat, black;
+	background-size: cover;
 }
