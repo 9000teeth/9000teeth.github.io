@@ -38,6 +38,7 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: "left right";
+	grid-template-rows: auto;
 }
 
 .left {
@@ -109,8 +110,7 @@ a {
 	}
 
 	.self {
-		min-height: 100vh;
 		background-attachment: scroll;
-		background-size: 100% auto;
+		background-size: cover;
 	}
 }
