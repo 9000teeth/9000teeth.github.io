@@ -79,11 +79,14 @@ a {
 	.grid {
 		height: auto;
 		grid-template-areas: "left left" "right right";
-		grid-template-rows: 50% auto;
 	}
 
 	.diary {
 		margin: 50px;
+	}
+
+	.diary div {
+		margin: 0 0 30px 0;
 	}
 
 	.diary div p {
@@ -97,5 +100,13 @@ a {
 	.about {
 		font-size: 16px;
 		padding: 50px;
+	}
+
+	.index {
+		justify-content: flex-start;
+	}
+
+	.self {
+		background-attachment: scroll;
 	}
 }
