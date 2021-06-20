@@ -109,7 +109,7 @@ a {
 	}
 
 	.self {
-		min-height: 100%;
+		min-height: 200%;
 		background-attachment: scroll;
 		background-size: 100% auto;
 	}
