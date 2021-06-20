@@ -78,7 +78,6 @@ a {
 
 @media screen and (max-width: 768px) {
 	.grid {
-		height: auto;
 		min-height: 100%;
 		grid-template-areas: "left left" "right right";
 		grid-template-columns: 1fr auto;
@@ -111,6 +110,5 @@ a {
 
 	.self {
 		background-attachment: scroll;
-		background-size: cover;
 	}
 }
