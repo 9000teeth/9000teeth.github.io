@@ -77,7 +77,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-	.grid {
+	.grid, .grid section {
 		display: block;
 		height: auto;
 	}
