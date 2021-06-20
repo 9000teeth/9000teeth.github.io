@@ -81,6 +81,7 @@ a {
 		display: block;
 		height: auto;
 		min-height: 100%;
+		max-height: none;
 	}
 
 	.diary {
