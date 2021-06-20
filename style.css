@@ -74,3 +74,28 @@ a {
 	background: url("teeth.png") no-repeat;
 	background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+	.grid {
+		height: auto;
+		grid-template-areas: "left" "right";
+		grid-template-rows: 50% auto;
+	}
+
+	.diary {
+		margin: 50px;
+	}
+
+	.diary div p {
+		font-size: 18px;
+	}
+
+	.diary div h1, .links a {
+		font-size: 30px;
+	}
+	
+	.about {
+		font-size: 18px;
+		padding: 50px;
+	}
+}
