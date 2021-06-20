@@ -103,6 +103,9 @@ a {
 	.about {
 		font-size: 17px;
 		padding: 30px;
+		height: 50%;
+		width: auto;
+		overflow: auto;
 	}
 
 	.index {
