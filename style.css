@@ -17,16 +17,21 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: "left right";
-	overflow: hidden;
 }
 
 .left {
 	grid-area: left;
+}
+
+.self {
+	background: url("self.png") fixed no-repeat;
+	background-size: contain;
+}
+
+.index {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	background: #666;
-	color: black;
 }
 
 .links a {
@@ -38,7 +43,13 @@ a {
 	font-style: italic;
 }
 
-.right {
-	background: url("teeth.png") no-repeat, black;
+.about {
+	padding: 4vw;
+	font-size: 2.5vw;
+	line-height: 1.5em;
+}
+
+.teeth {
+	background: url("teeth.png") no-repeat;
 	background-size: cover;
 }
