@@ -78,7 +78,7 @@ a {
 @media screen and (max-width: 768px) {
 	.grid {
 		height: auto;
-		grid-template-areas: "left" "right";
+		grid-template-areas: "left left" "right right";
 		grid-template-rows: 50% auto;
 	}
 
@@ -87,7 +87,7 @@ a {
 	}
 
 	.diary div p {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.diary div h1, .links a {
@@ -95,7 +95,7 @@ a {
 	}
 	
 	.about {
-		font-size: 18px;
+		font-size: 16px;
 		padding: 50px;
 	}
 }
