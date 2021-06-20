@@ -102,7 +102,7 @@ a {
 	
 	.about {
 		font-size: 17px;
-		padding: 30px;
+		padding: 15px 30px;
 		height: calc(50% - 60px);
 		width: auto;
 		overflow: auto;
