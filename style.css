@@ -102,14 +102,9 @@ a {
 	
 	.about {
 		font-size: 17px;
-		padding: 15px 30px;
-		height: calc(50% - 60px);
+		padding: 30px;
+		height: auto;
 		width: auto;
-		overflow: auto;
-	}
-
-	.about::-webkit-scrollbar {
-		display: none;
 	}
 
 	.index {
