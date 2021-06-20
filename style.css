@@ -79,6 +79,7 @@ a {
 	.grid {
 		height: auto;
 		min-height: 100%;
+		max-height: none;
 		grid-template-areas: "left left" "right right";
 		grid-template-columns: 1fr auto;
 		grid-template-rows: auto auto;
