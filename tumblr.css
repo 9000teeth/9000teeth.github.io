@@ -1,0 +1,35 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: times, serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.grid {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "left right";
+	grid-template-rows: auto;
+}
+
+.left {
+	grid-area: left;
+}
+
+.links a {
+	font-size: 4vw;
+	display: block;
+}
+
+.links a:hover {
+	font-style: italic;
+}
+
+.right {
+	grid-area: right;
+}
