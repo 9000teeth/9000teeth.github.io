@@ -20,12 +20,14 @@ a {
 
 .left {
 	grid-area: left;
+	position: fixed;
 	display: flex;
-	flex-direction; column;
+	flex-direction: column;
 	justify-content: flex-end;
 }
 
 .links a {
+	color: black;
 	font-size: 4vw;
 	display: block;
 }
@@ -36,4 +38,6 @@ a {
 
 .right {
 	grid-area: right;
+	background: url("https://a.feral.cat/sea.png") fixed no-repeat;
+	background-size: cover;
 }
