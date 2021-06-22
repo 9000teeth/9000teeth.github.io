@@ -55,7 +55,7 @@ a {
 .post blockquote,
 figure, video, iframe, .video, .video iframe, figure.tmblr-embed.tmblr-full,
 figure.tmblr-embed.tmblr-full iframe, .caption iframe {
-	width: 100%;
+	max-width: 100%;
 }
 
 .caption {width: calc(100% - 4em); padding: 2em; background: black; list-style-type: none;}
