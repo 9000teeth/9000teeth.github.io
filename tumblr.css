@@ -43,6 +43,12 @@ a {
 	margin: 5vw 5vw 5vw 0;
 }
 
+.time {
+	width: calc(100% - 4em);
+	padding: 4em;
+	background: black;
+}
+
 .post {
 	margin: 0 0 5vw 0;
 }
