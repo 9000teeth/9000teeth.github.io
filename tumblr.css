@@ -66,7 +66,7 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	max-width: 100%;
 }
 
-.caption {width: 100%; margin: 0 0 2em 0; list-style-type: none;}
+.caption {width: 100%; margin: 0 0 2em 0; line-height: 1.5em; list-style-type: none;}
 .caption a {text-decoration: underline;}
 .text-caption:first-of-type {margin-top: 0;}
 
