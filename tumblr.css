@@ -37,6 +37,8 @@ a {
 
 .right {
 	grid-area: right;
+	width: 50%;
+	min-height: 100%;
 	background: black;
 }
 
@@ -98,6 +100,7 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 p.tmblr-attribution {margin-top: 1em !important;}
 
 h1.post-title {margin-top: 0;}
+h3 { font-weight: normal; }
 
 a.link-wrap {display: block; border: 1px solid {color:borders};}
 .link {padding: 2em;}
