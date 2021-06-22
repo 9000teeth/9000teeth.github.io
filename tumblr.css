@@ -10,6 +10,10 @@ body {
 	grid-template-areas: "left right";
 }
 
+::selection {
+	background: black;
+}
+
 a {
 	text-decoration: none;
 	color: white;
