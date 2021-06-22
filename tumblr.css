@@ -2,10 +2,9 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: times, serif;
-	width: 100%;
-	height: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
 	grid-template-areas: "left right";
 }
 
@@ -35,4 +34,17 @@ a {
 	grid-area: right;
 	background: url("http://a.feral.cat/sea.png") fixed no-repeat;
 	background-size: cover;
+}
+
+.posts {
+	width: 60%;
+	margin: auto;
+	position: relative;
+}
+
+.posts li,
+.posts blockquote,
+figure, video, iframe, .video, .video iframe, figure.tmblr-embed.tmblr-full,
+figure.tmblr-embed.tmblr-full iframe, .caption iframe {
+	max-width: 100%;
 }
