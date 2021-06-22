@@ -4,7 +4,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	font: 1.2vw times, serif;
-	color: white;
+	color: black;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
@@ -13,7 +13,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 .left {
@@ -24,10 +24,12 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	background: url("http://a.feral.cat/sea.png") fixed no-repeat;
+	background-size: cover;
 }
 
 .links a {
-	color: black;
+	color: white;
 	font-size: 4vw;
 	display: block;
 }
@@ -38,14 +40,11 @@ a {
 
 .right {
 	grid-area: right;
-	background: url("http://a.feral.cat/sea.png") fixed no-repeat;
-	background-size: cover;
+	background: white;
 }
 
 .posts {
-	width: 60%;
-	margin: 4vw auto;
-	position: relative;
+	margin: 5vw;
 }
 
 .posts li,
