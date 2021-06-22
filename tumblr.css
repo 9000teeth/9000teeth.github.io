@@ -58,7 +58,7 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	width: 100%;
 }
 
-.caption {width: calc(100% - 4em); padding: 2em; background: black; list-style-type: none;}
+.caption {width: calc(100% - 4em - 4vw); padding: 2em; background: black; list-style-type: none;}
 .caption a {text-decoration: underline;}
 .text-caption:first-of-type {margin-top: 0;}
 
