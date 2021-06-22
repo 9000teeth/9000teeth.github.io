@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	width: 100vw;
 	height: 100vh;
-	font-family: times, serif;
+	font: 0.8vw times, serif;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
