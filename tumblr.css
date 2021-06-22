@@ -43,10 +43,12 @@ a {
 	margin: 5vw 5vw 5vw 0;
 }
 
-.time {
+.datetime {
 	width: calc(100% - 4em);
-	padding: 4em;
+	padding: 2em;
 	background: black;
+	display: flex;
+	justify-content: space-between;
 }
 
 .post {
