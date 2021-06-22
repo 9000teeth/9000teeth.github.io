@@ -15,7 +15,6 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: "left right";
-	grid-template-rows: auto;
 }
 
 .left {
@@ -38,6 +37,6 @@ a {
 
 .right {
 	grid-area: right;
-	background: url("https://a.feral.cat/sea.png") fixed no-repeat;
+	background: url("http://a.feral.cat/sea.png") fixed no-repeat;
 	background-size: cover;
 }
