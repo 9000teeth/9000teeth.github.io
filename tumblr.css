@@ -19,7 +19,6 @@ a {
 .left {
 	grid-area: left;
 	position: fixed;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
