@@ -4,6 +4,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	font: 1.2vw times, serif;
+	color: white;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
@@ -12,6 +13,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: white;
 }
 
 .left {
@@ -42,7 +44,7 @@ a {
 
 .posts {
 	width: 60%;
-	margin: auto;
+	margin: 4vw auto;
 	position: relative;
 }
 
@@ -54,6 +56,7 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 }
 
 .caption {margin-top: 2em; list-style-type: none;}
+.caption a {text-decoration: underline;}
 .text-caption:first-of-type {margin-top: 0;}
 
 .user-icon, .ask-icon {
