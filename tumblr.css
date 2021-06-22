@@ -16,8 +16,6 @@ a {
 
 .left {
 	grid-area: left;
-	width: 100%;
-	height: 100%;
 	position: fixed;
 	display: flex;
 	flex-direction: column;
@@ -46,8 +44,6 @@ a {
 }
 
 .post {
-	position: relative;
-	display: block;
 	margin: 0 0 5vw 0;
 }
 
