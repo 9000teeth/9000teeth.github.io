@@ -85,6 +85,10 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	font-weight: bold;
 }
 
+.username a {
+	text-decoration: none;
+}
+
 .deactive::after {
 	content: '(deactivated)';
 	margin-left: 1em;
