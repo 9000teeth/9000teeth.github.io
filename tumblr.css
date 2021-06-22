@@ -39,6 +39,10 @@ a {
 	grid-area: right;
 }
 
+.posts {
+	margin: 4vw 0;
+}
+
 .post {
 	margin: 0 0 4vw 0;
 }
