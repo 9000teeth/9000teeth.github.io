@@ -242,6 +242,7 @@ ol.notes li.note img.avatar {
 	body {
 		display: block;
 		font-size: 17px;
+		overflow-x: hidden;
 	}
 
 	.left {
@@ -253,16 +254,16 @@ ol.notes li.note img.avatar {
 		position: fixed;
 		top: 0;
 		justify-content: space-between;
-		margin: 30px 30px 0 30px;
+		margin: 25px 25px 0 25px;
 	}
 
 	.centerlink {
 		display: inline-block;
-		margin: 0 30px;
+		margin: 0 5px;
 	}
 
 	.posts {
-		margin: 25px;
+		margin: 75px 25px 25px 25px;
 	}
 
 	.post {
