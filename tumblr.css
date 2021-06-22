@@ -40,20 +40,18 @@ a {
 }
 
 .posts {
-	margin: 5vw 10vw 5vw 0;
+	margin: 10vw 10vw 10vw 0;
 }
 
 .datetime {
-	width: calc(100% - 4em);
-	padding: 2em;
-	background: black;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	text-transform: lowercase;
 }
 
 .post {
-	margin: 0 0 5vw 0;
+	margin: 0 0 10vw 0;
 }
 
 .post:last-child {
@@ -67,7 +65,7 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	max-width: 100%;
 }
 
-.caption {width: calc(100% - 4em); padding: 2em; background: black; list-style-type: none;}
+.caption {width: 100%; list-style-type: none;}
 .caption a {text-decoration: underline;}
 .text-caption:first-of-type {margin-top: 0;}
 
