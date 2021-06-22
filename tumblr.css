@@ -13,7 +13,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 .left {
@@ -27,7 +27,6 @@ a {
 }
 
 .links a {
-	color: white;
 	font-size: 4vw;
 	display: block;
 }
@@ -41,7 +40,7 @@ a {
 }
 
 .posts {
-	margin: 5vw;
+	margin: 5vw 5vw 5vw 0;
 }
 
 .post {
@@ -59,7 +58,7 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	max-width: 100%;
 }
 
-.caption {width: calc(100% - 2em); padding: 2em; background: white; list-style-type: none;}
+.caption {width: calc(100% - 4em); padding: 2em; background: black; list-style-type: none;}
 .caption a {text-decoration: underline;}
 .text-caption:first-of-type {margin-top: 0;}
 
