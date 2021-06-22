@@ -1,19 +1,22 @@
 body {
 	padding: 0;
 	margin: 0;
-	width: 100%;
-	height: 100%;
 	font: 1.2vw times, serif;
 	color: black;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: "left right";
 }
 
 a {
 	text-decoration: none;
 	color: black;
+}
+
+.grid {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "left right";
 }
 
 .left {
