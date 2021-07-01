@@ -6,6 +6,11 @@ body {
 	font-family: times, serif;
 }
 
+::selection {
+	background: black;
+	color: black;
+}
+
 a {
 	color: white;
 	text-decoration: none;
