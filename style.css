@@ -7,8 +7,8 @@ body {
 }
 
 ::selection {
-	background: black;
-	color: black;
+	background: #666;
+	color: white;
 }
 
 a {
