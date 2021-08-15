@@ -104,7 +104,7 @@ p.tmblr-attribution {margin-top: 1em !important;}
 h1.post-title {margin-top: 0;}
 h3 { font-weight: normal; }
 
-a.link-wrap {display: block; border: 1px solid {color:borders};}
+a.link-wrap {display: block;}
 .link {padding: 2em;}
 .link-host, .link-txt {margin-top: 1.5em;}
 
@@ -122,7 +122,7 @@ img {
 	max-width: 100%;
 }
  
-.photo img, .photo div {width: 100%;}
+.photo img, .photo div {width: 100%; margin:0; padding: 0;}
 .vignette, #vignette {opacity: 0;}
 .tmblr-lightbox, #tumblr_lightbox {background-color: rgba(130, 130, 130, 0.75) !important;}
  
