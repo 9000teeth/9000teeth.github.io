@@ -123,6 +123,7 @@ img {
 }
  
 .photo img, .photo div {width: 100%; margin:0; padding: 0;}
+.photoset { transform: none; }
 .vignette, #vignette {opacity: 0;}
 .tmblr-lightbox, #tumblr_lightbox {background-color: rgba(130, 130, 130, 0.75) !important;}
  
