@@ -264,6 +264,7 @@ ol.notes li.note img.avatar {
 	.mobilenav {
 		display: flex;
 		position: fixed;
+		z-index: 99;
 		top: 0;
 		justify-content: space-between;
 		padding: 25px;
