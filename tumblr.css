@@ -123,7 +123,7 @@ img {
 }
  
 .photo { width: 100%; }
-.photoset { transform-origin: 0 0 !important; }
+.photoset { transform-origin: 0 0; }
 .vignette, #vignette {opacity: 0;}
 .tmblr-lightbox, #tumblr_lightbox {background-color: rgba(130, 130, 130, 0.75) !important;}
  
@@ -225,6 +225,7 @@ ol.notes {
 }
 
 ol.notes li.note {padding: 0.5em 0; list-style-type: none;}
+ol.notes li.note img.avatar { display: none; }
 
 <<<<<<< HEAD
 =======
