@@ -122,7 +122,8 @@ img {
 	max-width: 100%;
 }
  
-.photo, .photo img { width: 100%; }
+.photo { width: 100%; }
+.photoset { transform: none!important; }
 .vignette, #vignette {opacity: 0;}
 .tmblr-lightbox, #tumblr_lightbox {background-color: rgba(130, 130, 130, 0.75) !important;}
  
