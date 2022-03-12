@@ -109,6 +109,10 @@ a {
 	.diary div p {
 		font-size: 17px;
 	}
+
+	.diary div blockquote {
+		font-size: 14px;
+	}
 	
 	.about {
 		font-size: 17px;
