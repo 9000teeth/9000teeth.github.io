@@ -27,7 +27,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: url("http://a.feral.cat/sea.png") fixed no-repeat;
+	background: url("http://feral.cat/sea.png") fixed no-repeat;
 	background-size: cover;
 }
 
