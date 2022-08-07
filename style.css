@@ -12,8 +12,9 @@ body {
 }
 
 a {
-	color: white;
+	color: #666;
 	text-decoration: none;
+	font-variant: small-caps;
 }
 
 .diary {
