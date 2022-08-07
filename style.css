@@ -14,7 +14,6 @@ body {
 a {
 	color: white;
 	text-decoration: none;
-	font-variant: small-caps;
 }
 
 .diary {
@@ -36,6 +35,10 @@ a {
 .diary div p {
 	font-size: 2vw;
 	line-height: 1.5em;
+}
+
+.diary div a {
+	font-variant: small-caps;
 }
 
 .diary div blockquote {
