@@ -89,10 +89,9 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	font-weight: bold;
 }
 
-.deactive::after {
-	content: '(deactivated)';
-	margin-left: 1em;
-	opacity: 0.75;
+.deactive {
+	font-weight: normal;
+	text-decoration: line-through;
 }
 
 p.tmblr-attribution {margin-top: 1em !important;}
