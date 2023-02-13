@@ -89,7 +89,7 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	font-weight: bold;
 }
 
-.deactive {
+.caption .deactive a {
 	font-weight: normal;
 	text-decoration: none;
 	text-decoration: line-through;
