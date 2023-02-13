@@ -71,6 +71,10 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	max-width: 100%;
 }
 
+.post-content div.npf_row .npf_col, .post-content div.npf_row figure.tmblr-full, .post div.npf_row .npf_col, .post div.npf_row figure.tmblr-full, body div.npf_row .npf_col, body div.npf_row figure.tmblr-full {
+	display: block;
+}
+
 .caption {width: 100%; margin: 2em 0 0 0; line-height: 1.5em; list-style-type: none;}
 .caption a {text-decoration: underline;}
 .text-caption:first-of-type {margin-top: 0;}
@@ -223,8 +227,6 @@ ol.notes {
 ol.notes li.note {padding: 0.5em 0; list-style-type: none;}
 ol.notes li.note img.avatar { display: none; }
 
-<<<<<<< HEAD
-=======
 ol.notes li.note img.avatar {
 	margin-right: 1em;
 	vertical-align: middle;
@@ -233,7 +235,6 @@ ol.notes li.note img.avatar {
 	height: 1.25em;
 }
 
->>>>>>> parent of bd8c962 (Update tumblr.css)
 .mobilenav {
 	display: none;
 }
@@ -273,6 +274,15 @@ ol.notes li.note img.avatar {
 	}
 
 	.post {
-		margin: 0 0 50px 0;
+		margin: 0 0 75px 0;
+	}
+
+	.datetime {
+		margin-bottom: 12.5px;
+	}
+
+	p {
+		margin-block-start: 12.5px;
+		margin-block-end: 12.5px;
 	}
 }
