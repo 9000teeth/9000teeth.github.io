@@ -5,9 +5,10 @@ body {
 	background: #666;
 	color: white;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 50vw 50vw;
 	grid-template-rows: 1fr;
 	grid-template-areas: "left right";
+	overflow-x: hidden;
 }
 
 ::selection {
@@ -69,6 +70,11 @@ a {
 figure, video, iframe, .video, .video iframe, figure.tmblr-embed.tmblr-full,
 figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	max-width: 100%;
+}
+
+figure.tmblr-embed.tmblr-full, figure.tmblr-embed.tmblr-full iframe { width: 100%; }
+.tmblr-full>video {
+  max-height: 80vh; background: black;
 }
 
 .caption {width: 100%; margin: 1em 0 0 0; line-height: 1.5em; list-style-type: none;}
@@ -213,6 +219,10 @@ p.npf_chat, p.npf_chat b {font-family: inherit;}
 
 .audioinfo li {list-style-type: none;}
 .track {font-weight: bold;}
+
+.note {
+	display: none;
+}
 
 ol.notes {
     max-width: 100%;
