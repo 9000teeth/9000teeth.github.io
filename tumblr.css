@@ -71,10 +71,6 @@ figure.tmblr-embed.tmblr-full iframe, .caption iframe {
 	max-width: 100%;
 }
 
-.post-content div.npf_row .npf_col, .post-content div.npf_row figure.tmblr-full, .post div.npf_row .npf_col, .post div.npf_row figure.tmblr-full, body div.npf_row .npf_col, body div.npf_row figure.tmblr-full {
-	display: block;
-}
-
 .caption {width: 100%; margin: 2em 0 0 0; line-height: 1.5em; list-style-type: none;}
 .caption a {text-decoration: underline;}
 .text-caption:first-of-type {margin-top: 0;}
