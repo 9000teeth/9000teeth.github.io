@@ -4,10 +4,7 @@ body {
 	font: 1.2vw times, serif;
 	background: #666;
 	color: white;
-	display: grid;
-	grid-template-columns: 50vw 50vw;
-	grid-template-rows: 1fr;
-	grid-template-areas: "left right";
+	display: flex;
 	overflow-x: hidden;
 }
 
@@ -21,7 +18,6 @@ a {
 }
 
 .left {
-	grid-area: left;
 	position: fixed;
 	height: 100%;
 	width: 50%;
@@ -42,7 +38,8 @@ a {
 }
 
 .right {
-	grid-area: right;
+	width: 50%;
+	margin-left: 50%;
 }
 
 .posts {
