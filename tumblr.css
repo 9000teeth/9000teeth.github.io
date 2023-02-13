@@ -265,6 +265,11 @@ ol.notes li.note img.avatar {
 		display: none;
 	}
 
+	.right {
+		width: auto;
+		margin: auto;
+	}
+
 	.mobilenav {
 		display: flex;
 		position: fixed;
