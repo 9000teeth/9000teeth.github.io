@@ -172,7 +172,7 @@ p.npf_chat, p.npf_chat b {font-family: inherit;}
 .question p:first-of-type {margin-top: 0;}
 .question p:last-of-type {margin-bottom: 0;}
  
-.audiopost {padding: 2em; }
+/* .audiopost {padding: 2em; } */
  
 .album-art {
 	z-index: 1;
