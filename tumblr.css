@@ -77,6 +77,10 @@ figure.tmblr-embed.tmblr-full, figure.tmblr-embed.tmblr-full iframe { width: 100
   max-height: 80vh; background: black;
 }
 
+#dashboard_video_iframe {
+	max-width: 100%;
+}
+
 .caption {width: 100%; margin: 1em 0 0 0; line-height: 1.5em; list-style-type: none;}
 .caption a {text-decoration: underline;}
 .text-caption:first-of-type {margin-top: 0;}
