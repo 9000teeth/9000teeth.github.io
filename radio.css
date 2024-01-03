@@ -1,0 +1,50 @@
+:root {
+    --main: #141414;
+    --text: #e01a18;
+    --tertiary: #fff;
+}
+
+@keyframes fade {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
+
+@font-face {
+    font-family: 'Times Dot';
+    src: url('radio-assets/TimesDotRom.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Times Dot';
+    src: url('radio-assets/Times Dot-Italic.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Times Dot';
+    src: url('radio-assets/TimesDotBol.otf') format('opentype');
+    font-weight: bold;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font: 1.4vw 'Times Dot', times, serif;
+    line-height: 1.6em;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    animation: fade 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+::selection {
+    background: var(--text);
+    color: var(--tertiary);
+}
+
