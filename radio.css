@@ -1,7 +1,6 @@
 :root {
-    --main: #141414;
+    --bg: #141414;
     --text: #e01a18;
-    --tertiary: #fff;
 }
 
 @keyframes fade {
@@ -33,7 +32,7 @@
 body {
     background: var(--bg);
     color: var(--text);
-    font: 1.4vw 'Times Dot', times, serif;
+    font: 1.8vw 'Times Dot', times, serif;
     line-height: 1.6em;
     padding: 0;
     margin: 0;
@@ -41,10 +40,28 @@ body {
     animation: fade 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ::selection {
     background: var(--text);
-    color: var(--tertiary);
+    color: var(--bg);
 }
 
+.display {
+    display: none;
+}
+
+.select li {
+    opacity: 0.75;
+}
+
+.select li > a {
+    opacity: 1;
+}
+
+.select a:hover {
+    font-style: italic;
+}
