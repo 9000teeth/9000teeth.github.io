@@ -4,12 +4,22 @@
 }
 
 @keyframes fade {
-	0% {
+	from {
 	  opacity: 0;
 	}
-	100% {
+	to {
 	  opacity: 1;
 	}
+}
+
+@keyframes blink {
+    from {
+      opacity: .1;
+    }
+  
+    to {
+      opacity: 1;
+    }
 }
 
 @font-face {
@@ -57,7 +67,7 @@ body {
     font: 1.8vw 'Times Dot', times, serif;
     line-height: 1.6em;
     padding: 0;
-    margin: 0;
+    margin: 1.5vw 0;
     opacity: 0;
     animation: fade 2s;
     animation-iteration-count: 1;
@@ -75,6 +85,10 @@ body {
 .display {
     overflow: hidden;
     display: none;
+    border: 0.1vw solid var(--text);
+    border-radius: 2vw;
+    padding: 1.5vw;
+    margin: 1vw 0;
 }
 
 .select {
@@ -87,4 +101,188 @@ body {
 
 .select a:hover {
     font-style: italic;
+}
+
+.tracklist-container {
+    height: 16vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tracklist-container::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+.tracklist-container::-webkit-scrollbar-track {
+    background: none;
+}
+
+.tracklist-container::-webkit-scrollbar-thumb {
+    background: var(--text);
+}
+
+.tracklist {
+    counter-reset: item;
+    padding: 0 0 1.5vw;
+}
+
+.track {
+    display: block;
+    clear: both;
+}
+
+.track:not(:last-child) { 
+    padding: 0 1.5vw 1.5vw;
+    border-bottom: 0.05vw solid var(--text);
+    margin: 0 -1.5vw 1.5vw;
+}
+
+.track:before {
+    content: counter(item, decimal-leading-zero) " "; 
+    counter-increment: item;
+    float: left;
+    margin-right: 1.5vw;
+    font-family: 'xanh mono', monospace;
+}
+
+.track.amplitude-active-song-container {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+.track span {
+    display: block;
+    font: 1.2vw 'helvetica', sans-serif;
+    text-transform: uppercase;
+}
+
+.player-container {
+    padding: 1.5vw 3vw 0;
+    border-top: 0.05vw solid var(--text);
+    margin: 0 -2vw;
+}
+
+.progress-container {
+    width: 100%;
+    height: 0.6vw;
+    position: relative;
+    border: 0.05vw solid var(--text);
+}
+
+.played {
+    width: 100%;
+    height: 0.6vw;
+    position: absolute;
+    display: block;
+    z-index: 3;
+    appearance: none;
+    background: transparent;
+}
+
+.played[value]::-webkit-progress-bar {
+    background: none; 
+}
+
+.played[value]::-webkit-progress-value {
+    background: var(--text); 
+}
+
+.buffered {
+    width: 100%;
+    height: 0.6vw;
+    position: absolute;
+    display: block;
+    appearance: none;
+    z-index: 2;
+    background: transparent;
+}
+
+.buffered[value]::-webkit-progress-bar {
+    background: none; 
+}
+
+.buffered[value]::-webkit-progress-value {
+    background: none;
+    border-right: 0.05vw solid var(--text); 
+}
+
+.time-container {
+    width: 100%;
+    font: 1vw 'helvetica', sans-serif;
+    margin: 0.3vw 0;
+}
+
+.amplitude-current-time {
+    float: left;
+}
+
+.amplitude-duration-time {
+    float: right;
+}
+
+.control-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin: 1vw 0 0.5vw;
+}
+
+.icon {
+    width: 2vw;
+    height: 2vw;
+    filter: invert(15%) sepia(85%) saturate(5817%) hue-rotate(358deg) brightness(95%) contrast(85%);
+}
+
+.prev-button {
+    background: url(/radio-assets/next.svg);
+    transform: rotate(180deg);
+}
+
+.control-container .amplitude-paused {
+    background: url(/radio-assets/play.svg);
+}
+
+.control-container .amplitude-playing {
+    background: url(/radio-assets/pause.svg)
+}
+
+.next-button {
+    background: url(/radio-assets/next.svg);
+}
+
+.mute-button {
+    background: url(/radio-assets/volume.svg);
+    float: left;
+}
+
+.amplitude-volume-slider {
+    appearance: none;
+    width: calc(100% - 3vw);
+    display: block;
+    float: right;
+}
+
+.amplitude-volume-slider:focus {
+    outline: none;
+}
+
+.amplitude-volume-slider::-webkit-slider-runnable-track {
+    height: 0.05vw;
+    margin-bottom: -1.5vw;
+    background: var(--text); 
+}
+.amplitude-volume-slider::-webkit-slider-thumb {
+    height: 1vw;
+    width: 1vw;
+    background: var(--text); 
+    border-radius: 50%;
+    -webkit-appearance: none;
+    margin-top: -0.5vw;
+}
+.amplitude-volume-slider:focus::-webkit-slider-runnable-track {
+    background: var(--text); 
 }
