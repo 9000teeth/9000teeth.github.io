@@ -14,20 +14,30 @@
       }
     });
 
-    $('a').click(function(e) {
-      e.preventDefault();
+    let $activeTab = null;
 
-      let $this = $(this);
-
-      if ($this.next().hasClass('show')) {
-          $this.next().removeClass('show');
-          $this.next().slideUp(200);
-      } else {
-          $this.parent().parent().find('li .display').removeClass('show');
-          $this.parent().parent().find('li .display').slideUp(200);
-          $this.next().toggleClass('show');
-          $this.next().slideToggle(200);
-      }
+    $('a').click(function (e) {
+        e.preventDefault();
+    
+        let $this = $(this);
+    
+        if ($activeTab && !$this.is($activeTab)) {
+            $activeTab.removeClass('active');
+            $activeTab.next().removeClass('show');
+            $activeTab.next().slideUp(200);
+        }
+    
+        if ($this.next().hasClass('show')) {
+            $this.removeClass('active');
+            $this.next().removeClass('show');
+            $this.next().slideUp(200);
+            $activeTab = null;
+        } else {
+            $this.addClass('active');
+            $this.next().toggleClass('show');
+            $this.next().slideToggle(200);
+            $activeTab = $this;
+        }
     });
     //playlist stuff
     Amplitude.init({
@@ -104,5 +114,6 @@
     
       Amplitude.setSongPlayedPercentage((x / $(this).width()) * 100);
     });
+
   });
 })(jQuery);
