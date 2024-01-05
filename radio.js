@@ -134,9 +134,9 @@
         },
         "sp24-2": {
           songs: [{
-            "name": "Analog Sentimentalism",
-            "artist": "Parannoul",
-            "url": "/radio-assets/sp24-2/Analog Sentimentalism.mp3"
+            "name": "cocktail love",
+            "artist": "Maronnier",
+            "url": "/radio-assets/sp24-2/cocktail love.mp3"
           },
           {
             "name": "Wind",
