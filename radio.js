@@ -88,7 +88,7 @@
             {
               "name": "Kaze wo Atsumete",
               "artist": "Happy End",
-              "url": "/radio-assets/sp24-1/Kaze wo Atsumete.mp3"
+              "url": "/radio-assets/sp24-1/Kaze Wo Atsumete.mp3"
             },
             {
               "name": "Don&rsquo;t Say No",
