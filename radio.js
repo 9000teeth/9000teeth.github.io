@@ -46,9 +46,84 @@
         "sp24-1": {
           songs: [
             {
+              "name": "Suki",
+              "artist": "Midori",
+              "url": "/radio-assets/sp24-1/Suki.mp3"
+            },
+            {
               "name": "Flower of Carnage",
               "artist": "Kaji Meiko",
               "url": "/radio-assets/sp24-1/Flower of Carnage.mp3"
+            },
+            {
+              "name": "TOWN-0 PHASE-5",
+              "artist": "Susumu Hirasawa",
+              "url": "/radio-assets/sp24-1/TOWN-0 PHASE-5.mp3"
+            },
+            {
+              "name": "Art Mania",
+              "artist": "P-MODEL",
+              "url": "/radio-assets/sp24-1/Art Mania.mp3"
+            },
+            {
+              "name": "Habatake Yoruno Nioigusa",
+              "artist": "betcover!!",
+              "url": "/radio-assets/sp24-1/Habatake Yoruno Nioigusa.mp3"
+            },
+            {
+              "name": "Bridge Over Troubled Music",
+              "artist": "YELLOW MAGIC ORCHESTRA",
+              "url": "/radio-assets/sp24-1/Bridge Over Troubled Music.mp3"
+            },
+            {
+              "name": "Hollow Me",
+              "artist": "Yura Yura Teikoku",
+              "url": "/radio-assets/sp24-1/Hollow Me.mp3"
+            },
+            {
+              "name": "Tokai",
+              "artist": "Taeko Onuki",
+              "url": "/radio-assets/sp24-1/Tokai.mp3"
+            },
+            {
+              "name": "Kaze wo Atsumete",
+              "artist": "Happy End",
+              "url": "/radio-assets/sp24-1/Kaze wo Atsumete.mp3"
+            },
+            {
+              "name": "Don&rsquo;t Say No",
+              "artist": "Speed, Glue & Shinki",
+              "url": "/radio-assets/sp24-1/Don't Say No.mp3"
+            },
+            {
+              "name": "i f a surfer",
+              "artist": "Mass of the Fermenting Dregs",
+              "url": "/radio-assets/sp24-1/i f a surfer.mp3"
+            },
+            {
+              "name": "Stem",
+              "artist": "Sheena Ringo",
+              "url": "/radio-assets/sp24-1/Stem.mp3"
+            },
+            {
+              "name": "I become a lonely wind for you",
+              "artist": "Morita Doji",
+              "url": "/radio-assets/sp24-1/I become a lonely wind for you.mp3"
+            },
+            {
+              "name": "White Awakening",
+              "artist": "Les Rallizes Dénudés",
+              "url": "/radio-assets/sp24-1/White Awakening.mp3"
+            },
+            {
+              "name": "Glide",
+              "artist": "Lily Chou-Chou",
+              "url": "/radio-assets/sp24-1/Glide.mp3"
+            },
+            {
+              "name": "Thursday",
+              "artist": "Asobi Seksu",
+              "url": "/radio-assets/sp24-1/Thursday.mp3"
             },
             {
               "name": "Takeda no Komoriuta",
