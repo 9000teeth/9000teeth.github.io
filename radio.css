@@ -72,6 +72,8 @@ body {
     animation: fade 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    min-width: 100%;
+    min-height: calc(100vh - 3vw);
     display: flex;
     justify-content: center;
     align-items: center;
