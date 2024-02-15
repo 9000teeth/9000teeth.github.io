@@ -134,14 +134,44 @@
         },
         "sp24-2": {
           songs: [{
-            "name": "cocktail love",
-            "artist": "Maronnier",
-            "url": "/radio-assets/sp24-2/cocktail love.mp3"
+            "name": "Dreams Come True",
+            "artist": "S.E.S.",
+            "url": "/radio-assets/sp24-2/Dreams Come True.mp3"
+          },
+          {
+            "name": "The Day When She Cried for the First Time",
+            "artist": "Kim Kwang Seok",
+            "url": "/radio-assets/sp24-2/The Day When She Cried for the First Time.mp3"
+          },
+          {
+            "name": "It Might Have Been Late Summer",
+            "artist": "Sanullim",
+            "url": "/radio-assets/sp24-2/It Might Have Been Late Summer.mp3"
           },
           {
             "name": "Wind",
             "artist": "Kim Jung Mi",
             "url": "/radio-assets/sp24-2/Wind.mp3"
+          },
+          {
+            "name": "Nothing There",
+            "artist": "3rd Line Butterfly",
+            "url": "/radio-assets/sp24-2/Nothing There.mp3"
+          },
+          {
+            "name": "Andromeda",
+            "artist": "Mukimukimanmansu",
+            "url": "/radio-assets/sp24-2/Andromeda.mp3"
+          },
+          {
+            "name": "Stand on the Riverside",
+            "artist": "Crying Nut",
+            "url": "/radio-assets/sp24-2/Stand on the Riverside.mp3"
+          },
+          {
+            "name": "Train of Reunification Runs",
+            "artist": "Pochonbo Electronic Ensemble",
+            "url": "/radio-assets/sp24-2/Train of Reunification Runs.mp3"
           },
           {
             "name": "Play with Flowers",
@@ -152,6 +182,26 @@
             "name": "Don&rsquo;t Ask My Name",
             "artist": "Pochonbo Electronic Ensemble",
             "url": "/radio-assets/sp24-2/Don't Ask My Name.mp3"
+          },
+          {
+            "name": "Are We Living Like in Those Days?",
+            "artist": "Pochonbo Electronic Ensemble",
+            "url": "/radio-assets/sp24-2/Are We Living Like in Those Days.mp3"
+          },
+          {
+            "name": "Sunset",
+            "artist": "Jang Hyun",
+            "url": "/radio-assets/sp24-2/Sunset.mp3"
+          },
+          {
+            "name": "Wild Flower",
+            "artist": "Kim Doo Soo",
+            "url": "/radio-assets/sp24-2/Wild Flower.mp3"
+          },
+          {
+            "name": "Morning Dew",
+            "artist": "Yang Hee Eun",
+            "url": "/radio-assets/sp24-2/Morning Dew.mp3"
           },
           {
             "name": "Beautiful Rivers & Mountains",
