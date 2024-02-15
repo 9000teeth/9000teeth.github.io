@@ -111,7 +111,7 @@ body {
     overflow-x: hidden;
 }
 
-.tracklist-container::-webkit-scrollbar {
+/* .tracklist-container::-webkit-scrollbar {
     width: 0.3vw;
 }
 
@@ -121,7 +121,7 @@ body {
 
 .tracklist-container::-webkit-scrollbar-thumb {
     background: var(--text);
-}
+} */
 
 .tracklist {
     counter-reset: item;
@@ -310,9 +310,9 @@ body {
     .tracklist-container {
         height: 200px;
     }
-    .tracklist-container::-webkit-scrollbar {
+    /* .tracklist-container::-webkit-scrollbar {
         width: 5px;
-    }
+    } */
     .tracklist {
         padding: 0 0 15px;
     }
