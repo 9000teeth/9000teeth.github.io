@@ -1,0 +1,300 @@
+body {
+	padding: 0;
+	margin: 0;
+	font: 1.2vw times, serif;
+	background: #666;
+	color: white;
+	display: flex;
+	overflow-x: hidden;
+}
+
+::selection {
+	background: black;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.left {
+	position: fixed;
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: url("http://feral.cat/assets/images/sea.png") fixed no-repeat;
+	background-size: cover;
+}
+
+.toplinks a, .btmlinks a {
+	font-size: 4vw;
+	display: block;
+}
+
+.toplinks a:hover, .btmlinks a:hover {
+	font-style: italic;
+}
+
+.right {
+	width: 50%;
+	margin-left: 50%;
+}
+
+.posts {
+	margin: 5vw;
+}
+
+.datetime {
+	width: 100%;
+	margin: 0 0 1em 0;
+	display: flex;
+	justify-content: space-between;
+	text-transform: lowercase;
+}
+
+.post {
+	margin: 0 0 10vw 0;
+}
+
+.post:last-child {
+	margin: 0;
+}
+
+.post li,
+.post blockquote,
+figure, video, iframe, .video, .video iframe, figure.tmblr-embed.tmblr-full,
+figure.tmblr-embed.tmblr-full iframe, .caption iframe {
+	max-width: 100%;
+}
+
+figure.tmblr-embed.tmblr-full, figure.tmblr-embed.tmblr-full iframe { width: 100%; }
+.tmblr-full>video {
+  max-height: 80vh; background: black;
+}
+
+#dashboard_video_iframe {
+	max-width: 100%;
+}
+
+.caption {width: 100%; margin: 1em 0 0 0; line-height: 1.5em; list-style-type: none;}
+.caption a {text-decoration: underline;}
+.text-caption:first-of-type {margin-top: 0;}
+
+.user-icon, .ask-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 2em;
+	height: 2em;
+	margin-right: 1em;
+}
+
+.username {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.caption .deactive a {
+	font-weight: normal;
+	text-decoration: none;
+	text-decoration: line-through;
+}
+
+p.tmblr-attribution {margin-top: 1em !important;}
+
+h1.post-title {margin-top: 0;}
+h3 { font-weight: normal; }
+
+a.link-wrap {display: block;}
+.link {padding: 2em;}
+.link-host, .link-txt {margin-top: 1.5em;}
+
+.npf-link-block {
+	margin-top: 1.5em; 
+	background-color: inherit;
+ 	border: 1px solid inherit;
+	color: inherit;
+}
+
+img {
+	margin: 0;
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+ 
+.photo { width: 100%; }
+.photoset { transform-origin: 0 0 !important; }
+.vignette, #vignette {opacity: 0;}
+.tmblr-lightbox, #tumblr_lightbox {background-color: rgba(130, 130, 130, 0.75) !important;}
+ 
+.lightbox-image, #tumblr_lightbox img {
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	max-width: none;
+}
+
+#tumblr_lightbox_caption, .lightbox-caption {
+	color: #fff !important;
+	font-family: inherit;
+	margin-top: 1em !important;
+}
+
+.post-content div.npf_row, .post div.npf_row, body div.npf_row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.quote {line-height: 160%; font-size: 1.25em;}
+
+.quote p:first-of-type {margin-top: 0;}
+.quote p:last-of-type {margin-bottom: 0;}
+
+.source {margin-top: 1.5em;}
+
+.chat {padding: 0; margin: 0;}
+.chat li {list-style-type: none; margin-top: 1em;}
+.chat li:first-of-type {margin-top: 0;}
+.chatter {font-weight: bold;}
+
+p.npf_chat, p.npf_chat b {font-family: inherit;}
+
+.ask-wrap {padding-bottom: 2em;}
+
+.ask-wrap .asking {
+	display: inline-block; 
+	font-weight: bold;
+}
+
+.question {margin-top: 1em;}
+.question p:first-of-type {margin-top: 0;}
+.question p:last-of-type {margin-bottom: 0;}
+ 
+/* .audiopost {padding: 2em; } */
+ 
+.album-art {
+	z-index: 1;
+ 	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+.audio-player-wrap {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+ 
+.button {
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	margin: 7px;
+}
+ 
+.audiobox {
+	background-color: #f2f2f2;
+	z-index: 3;
+	position: absolute;
+	margin: 28px 0 0 28px;
+	border-radius: 50%;
+}
+ 
+.audioinfo {
+	display: inline-block;
+	height: 100px;
+	max-width: calc(100% - 100px);
+	margin-left: 100px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding-left: 2em;
+}
+
+.audioinfo li {list-style-type: none;}
+.track {font-weight: bold;}
+
+.note {
+	display: none;
+}
+
+ol.notes {
+    max-width: 100%;
+    padding: 0;
+    margin: 2em 0 0 0;
+}
+
+ol.notes li.note {padding: 0.5em 0; list-style-type: none;}
+ol.notes li.note img.avatar { display: none; }
+
+ol.notes li.note img.avatar {
+	margin-right: 1em;
+	vertical-align: middle;
+	display: inline-block;
+	width: 1.25em;
+	height: 1.25em;
+}
+
+.mobilenav {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	iframe.tmblr-iframe {
+		display: none!important;
+	}
+
+	html {
+		overflow-x: hidden;
+	}
+
+	body {
+		display: block;
+		font-size: 16px;
+		overflow-x: hidden;
+	}
+
+	.left {
+		display: none;
+	}
+
+	.right {
+		width: auto;
+		margin: auto;
+	}
+
+	.mobilenav {
+		display: flex;
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		justify-content: space-between;
+		padding: 25px;
+		width: calc(100% - 50px);
+		background: #666;
+	}
+
+	.posts {
+		margin: 75px 25px 25px 25px;
+	}
+
+	.post {
+		margin: 0 0 75px 0;
+	}
+
+	.datetime {
+		margin-bottom: 12.5px;
+	}
+
+	p {
+		margin-block-start: 12.5px;
+		margin-block-end: 12.5px;
+	}
+}
