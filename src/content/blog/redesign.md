@@ -1,11 +1,13 @@
 ---
-title: 'New site & blog with Astro.js'
+title: 'New site & blog'
 pubDate: 'Jun 26 2024'
 ---
 
-I hosted the first version of this site, idly up for almost three years, with Github Pages. It was three HTML pages stapled together. I was a simple woman and needed nothing better. But if all goes right, I'll be making proper (i.e. presentable) development efforts soon, which I'd like to document as I go. I also wanted someplace to host the art I make, and you know how galleries bloat.
+I hosted the first version of this site, idly up for almost three years, with GitHub Pages. It was three HTML pages stapled together. I was a simple woman and needed nothing better. But if all goes right, I'll be making proper (i.e. presentable) development efforts soon, which I'd like to document as I go. I also wanted someplace to host the art I make, and you know how galleries bloat.
 
-A static site generator, then, had its merits from the outset. I thought of using [Jekyll](https://jekyllrb.com/), since GitHub Pages processes sites through it already. [Hugo](https://gohugo.io/) didn't sound bad, either. I chose Astro ultimately because I'm most familiar with JS, markdown suits my workflow better than the Liquid templating language Jekyll uses, and because Astro does not deploy with client-side JS by default. It's relatively easy on the component libraries, too (have heard about Gatsby unwieldiness), and framework agnostic, not that I ended up using any frameworks.
+A static site generator, then, had its merits from the outset. I thought of using [Jekyll](https://jekyllrb.com/), since GitHub Pages processes sites through it already. Or [Hugo](https://gohugo.io/). I chose Astro ultimately because I am most familiar with JavaScript, and yet Astro deploys with little to no client-side JS. (I don't plan on hosting with GitHub Pages forever.)
+
+It's relatively easy on the component libraries, too, and framework agnostic, not that I ended up using any frameworks.
 
 Couple more things:
 

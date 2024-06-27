@@ -1,12 +1,11 @@
 ---
 import Page from '../layouts/Page.astro';
-import { Image } from "astro:assets";
 import Portrait from '../portrait.png';
 ---
 <Page>
 	<section class="bio">
 		<div class="bio-img">
-			<Image src={Portrait} 
+			<img src={Portrait.src} 
 			alt="An illustration of a cat holding a pencil.">
 		</div>
 		<div class="bio-txt">
