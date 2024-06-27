@@ -1,0 +1,24 @@
+---
+import Page from '../layouts/Page.astro';
+import { Image } from "astro:assets";
+import Portrait from '../portrait.png';
+---
+<Page>
+	<section class="bio">
+		<div class="bio-img">
+			<Image src={Portrait} 
+			alt="An illustration of a cat holding a pencil.">
+		</div>
+		<div class="bio-txt">
+			<h1>Hi there!</h1>
+			<p>My name is the background color of this site. I&rsquo;m a 4th year computer
+				science and linguistics student, a hobbyist illustrator and writer, and a card-carrying cryptid of the cornfields.
+			</p>
+			<p>Come say hello:</p>
+			<ul>
+				<li><a href="https://github.com/9000teeth">GitHub</a></li>
+				<li><a href="mailto:admin@feral.cat">e-mail</a></li>
+			</ul>
+		</div>
+	</section>
+</Page>

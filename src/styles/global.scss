@@ -1,0 +1,192 @@
+@font-face {
+	font-family: 'Inter';
+	src: url(../../Inter.ttf) format('truetype');
+  }
+  
+  @font-face {
+	font-family: 'Times Newer Roman';
+	src: url(../../TimesNewerRoman.otf) format('opentype');
+  }
+  
+  @font-face {
+	font-family: 'Times Newer Roman';
+	font-style: italic;
+	src: url(../../TimesNewerRoman-Italic.otf) format('opentype');
+  }
+  
+	$bg: #c1a14e;
+	$text: #333;
+	$accents: #444;
+	$white: #f8f7f3;
+	$dark: #222;
+	$display-font: 'Times Newer Roman', Times, serif;
+	$body-font: 'Inter', sans-serif;
+  
+  body {
+	background: $bg;
+	color: $text;
+	padding: 0;
+	margin: 0;
+	font-family: $body-font;
+	font-size: 1.5vw;
+	line-height: 1.6em;
+  }
+  
+  main {
+	width: 60vw;
+	margin: 4vw 4vw 4vw 20vw;
+	padding: 4vw;
+  }
+  
+  ::selection {
+	background: $dark;
+	color: $white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+	font-family: $display-font;
+	font-weight: normal;
+	color: $dark;
+  }
+  
+  a {
+	color: $dark;
+	text-decoration: none;
+  }
+  
+  nav {
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	left: 12vw;
+	top: 8vw;
+	text-align: right;
+	
+	a {
+	  display: block;
+	  font-family: $display-font;
+	  font-size: 2vw;
+	  line-height: 3rem;
+	  
+	  &:hover {
+		font-style: italic;
+	  }
+	  
+	  &.active {
+		visibility: hidden;
+	  }
+	}
+  }
+  
+  .bio {
+	height: calc(100vh - 16vw);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4vw;
+	
+	.bio-img, img {
+	  height: 100%;
+	  width: auto;
+	}
+	
+	a:hover {
+	  text-decoration: underline;
+	}
+  }
+
+  .blog-index {
+	ul {
+        list-style-type: none;
+        width: 100%;
+        font-size: 1.2em;
+    }
+    ul li {
+        display: flex;
+    }
+
+    ul li a {
+        font-family: $display-font;
+        color: $dark;
+    }
+
+    ul li a:hover {
+        text-decoration: underline;
+    }
+
+    ul li span {
+        font-size: .75em;
+        flex-basis: 8em;
+    }
+  }
+  
+  .prose {
+	.date {
+	  color: $accents;
+	  font-size: .85em;
+	  margin: -1em 0 0 0;
+	}
+	
+	a {
+	  color: $accents;
+	  
+	  &[href*="//"]::after { 
+		color: $dark;
+		font-size: .85em;
+		content: "\2197"; 
+		opacity: .4;
+		
+	  }
+	  &:hover::after {
+		opacity: 1;
+	  }
+	}
+	
+	blockquote {
+	  padding-left: 1em;
+	  border-left: .15em solid $dark;
+	  font-size: .85em;
+	  line-height: 1.55em;
+	}
+	
+	.astro-code {
+	  padding: 1em;
+	  font-size: .85em;
+	}
+  }
+  
+  @media screen and (max-width: 768px) {
+	body {
+		font-size: 18px;
+		overflow-x: hidden;
+	}
+
+	main {
+		width: auto;
+		margin: auto;
+		padding: 30px;
+	}
+
+	nav {
+		position: static;
+		flex-direction: row;
+		width: calc(100% - 60px);
+		padding: 0 30px;
+		justify-content: space-between;
+
+		a {
+			font-size: 22px;
+		}
+	}
+
+	.bio {
+		flex-direction: column;
+		height: auto;
+
+		.bio-img, img {
+			height: auto;
+			width: 100%;
+		}
+	}
+  }
+  
