@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -16,19 +16,10 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install dependencies
-        run: npm install
-      - name: Ensure Astro has execution permissions
-        run: chmod +x ./node_modules/.bin/astro
-      - name: Build your site with Astro
-        run: npx astro build
-        env:
-          CI: true
-      - name: Upload build output as artifact
-        uses: actions/upload-artifact@v4
+      - name: Install, build, and upload your site output
+        uses: withastro/action@v2
         with:
-          name: github-pages
-          path: ./dist 
+            package-manager: npm@latest
 
   deploy:
     needs: build
@@ -37,13 +28,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: github-pages
-          path: ./dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          folder: ./dist
