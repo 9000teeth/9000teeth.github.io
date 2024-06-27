@@ -85,12 +85,9 @@
 	align-items: center;
 	gap: 4vw;
 	
-	.bio-img {
-	  height: 100%;
-	}
-
-	img {
-		max-height: 100%;
+	.bio-img, img {
+		height: 100%;
+		width: auto;
 	}
 	
 	a:hover {
@@ -188,7 +185,7 @@
 
 		.bio-img, img {
 			height: auto;
-			width: 200px;
+			width: 250px;
 		}
 	}
   }
