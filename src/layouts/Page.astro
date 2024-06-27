@@ -2,7 +2,6 @@
 import '../styles/global.scss';
 import Nav from '../components/Nav.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
     title?: string;
@@ -20,7 +19,6 @@ const full_title = title ? `${title} ~ ${SITE_TITLE}` : SITE_TITLE;
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="icon" type="image/png" href="../icon.png">
     <style lang="scss"/>
-    <ViewTransitions fallback="animate"/>
 </head>
 <body>
 	<Nav/>

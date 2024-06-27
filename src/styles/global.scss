@@ -87,7 +87,10 @@
 	
 	.bio-img {
 	  height: 100%;
-	  width: auto;
+	}
+
+	img {
+		max-height: 100%;
 	}
 	
 	a:hover {
@@ -185,7 +188,7 @@
 
 		.bio-img, img {
 			height: auto;
-			width: 100%;
+			width: 200px;
 		}
 	}
   }
