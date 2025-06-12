@@ -51,6 +51,15 @@
 	padding: 2vw;
   }
   
+  @keyframes typing {
+        from { width: 0 }
+        to { width: 8ch }
+  }
+
+  @keyframes appear {
+        from { height: 0 }
+        to { height: 100% }
+  }
   ::selection {
 	background: $dark;
 	color: $white;
@@ -117,10 +126,6 @@
                 vertical-align: top;
         }
 
-        @keyframes typing {
-                from { width: 0 }
-                to { width: 8ch }
-        }
         
 	.bio-img {
                 grid-area: l;
@@ -140,10 +145,7 @@
                 animation: appear 1s 2.9s forwards steps(20, end);
         }
 
-        @keyframes appear {
-                from { height: 0 }
-                to { height: 100% }
-        }
+
 	
 	a:hover {
 	  text-decoration: underline;
