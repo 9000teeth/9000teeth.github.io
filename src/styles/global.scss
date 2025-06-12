@@ -13,6 +13,18 @@
 	font-style: italic;
 	src: url(../../TimesNewerRoman-Italic.otf) format('opentype');
   }
+
+  @font-face {
+        font-family: 'Fira Mono';
+        src: url(../../FiraMono-Regular.ttf) format('truetype');
+  }
+
+  @font-face {
+        font-family: 'Fira Mono';
+        font-weight: bold;
+        src: url(../../FiraMono-Bold.ttf) format('truetype');
+
+  }
   
 	$bg: #c1a14e;
 	$text: #333;
@@ -21,6 +33,7 @@
 	$dark: #222;
 	$display-font: 'Times Newer Roman', Times, serif;
 	$body-font: 'Inter', sans-serif;
+        $monospace: 'Fira Mono', monospace;
   
   body {
 	background: $bg;
@@ -28,14 +41,14 @@
 	padding: 0;
 	margin: 0;
 	font-family: $body-font;
-	font-size: 1.5vw;
+	font-size: 1.3vw;
 	line-height: 1.6em;
   }
   
   main {
 	width: 60vw;
-	margin: 4vw 4vw 4vw 20vw;
-	padding: 4vw;
+	margin: 4vw 6vw 4vw 22vw;
+	padding: 2vw;
   }
   
   ::selection {
@@ -79,16 +92,58 @@
   }
   
   .bio {
-	height: calc(100vh - 16vw);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 4vw;
-	
-	.bio-img, img {
-		height: 100%;
-		width: auto;
+	height: calc(100vh - 12vw);
+	font-family: $monospace;
+        font-size: 1.2vw;
+        line-height: 1.4em; 
+        display: grid;
+        grid-template:
+          "t t" 2vw
+          "l r" 1fr / 20vw 1fr;
+        grid-gap: 2vw 5vw;
+
+        .bio-head {
+                grid-area: t;
+        }
+
+        .bio-command {
+                overflow: hidden;
+                width: 0;
+                border-right: 1em solid;
+                white-space: nowrap;
+                margin: 0 auto;
+                animation: typing 1.5s 0.5s forwards steps(8, end);
+                display: inline-block;
+                vertical-align: top;
+        }
+
+        @keyframes typing {
+                from { width: 0 }
+                to { width: 8ch }
+        }
+        
+	.bio-img {
+                grid-area: l;
+                height: 0;
+                overflow: hidden;
+                animation: appear 0.5s 2.8s forwards;
 	}
+
+        img {
+                width: 100%;
+        }
+
+        .bio-txt {
+                grid-area: r;
+                overflow: hidden;
+                height: 0;
+                animation: appear 1s 2.9s forwards steps(20, end);
+        }
+
+        @keyframes appear {
+                from { height: 0 }
+                to { height: 100% }
+        }
 	
 	a:hover {
 	  text-decoration: underline;
@@ -180,12 +235,16 @@
 	}
 
 	.bio {
-		flex-direction: column;
-		height: auto;
-
+                font-size: 14px;
+                height: auto;
+                grid-template:
+                  "t" auto
+                  "l" auto
+                  "r" auto / 100%;
+                grid-gap: auto;
 		.bio-img, img {
-			height: auto;
 			width: 250px;
+                        margin: auto;
 		}
 	}
   }
