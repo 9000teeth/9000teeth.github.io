@@ -117,11 +117,11 @@
 
         .bio-command {
                 overflow: hidden;
-                width: 0;
+                //width: 0;
                 border-right: 1em solid;
                 white-space: nowrap;
                 margin: 0 auto;
-                animation: typing 1.5s 0.5s forwards steps(8, end);
+                //animation: typing 1.5s 0.5s forwards steps(8, end);
                 display: inline-block;
                 vertical-align: top;
         }
@@ -129,16 +129,16 @@
         
 	.bio-img {
                 grid-area: l;
-                height: 0;
+                //height: 0;
                 overflow: hidden;
-                animation: appear 0.5s 2.8s forwards;
+                //animation: appear 0.5s 2.8s forwards;
 	}
 
         .bio-txt {
                 grid-area: r;
                 overflow: hidden;
-                height: 0;
-                animation: appear 1s 2.9s forwards steps(20, end);
+                //height: 0;
+                //animation: appear 1s 2.9s forwards steps(20, end);
         }
 
 
