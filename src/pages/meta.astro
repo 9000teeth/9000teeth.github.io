@@ -1,0 +1,22 @@
+---
+import Page from '../layouts/Page.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('meta')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+
+<Page title="meta">
+    <div class="blog-index"><ul> { posts.map((post) => (
+        <li>
+            <span>
+                <FormattedDate date={post.data.pubDate} />
+            </span>
+	    <a href={`/meta/${post.slug}`}>
+                {post.data.title}
+            </a>
+        </li>
+    ))} </ul></div>
+</Page>
