@@ -1,2 +1,2 @@
-export const SITE_TITLE = 'feral cat';
-export const SITE_DESCRIPTION = 'whateva man';
+export const SITE_TITLE = '9000teeth';
+export const SITE_DESCRIPTION = 'personal blog/gallery website';
